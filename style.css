@@ -47,9 +47,9 @@ body {
 }
 .logo{
     border-radius: 50%; 
-    width: 85px;
-    height: 85px;
-    margin: -15px;
+    width: 65px;
+    height: 65px;
+    margin: -10px;
 }
 
 #header{
@@ -102,6 +102,14 @@ body {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
 
 #product1 {
     text-align: center;
@@ -163,4 +171,124 @@ body {
     width: 85px;
     height: 85px;
     margin: 0px;
+}
+
+footer .logo {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #f77716;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #000000;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover, 
+footer a:hover {
+    color: #f77716;
+}
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: -150px;
+        height: 100vh;
+        width: 150px;
+        background-color: #000000;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        left: 0px;
+
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        padding-right: 136px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #ff9900;
+        font-size: 24px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #product1 .pro{
+        width: 100%;
+    }
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #ff9900;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
 }
